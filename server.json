@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.heyyumi/heyyumi",
+  "title": "HeyYumi",
+  "description": "Ground your AI in verified Korean venue data: search & book across Seoul, Gyeonggi, Busan, Jeju.",
+  "version": "1.0.3",
+  "websiteUrl": "https://heyyumi.ai/mcp",
+  "repository": {
+    "url": "https://github.com/hmp-dev/heyyumi-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.heyyumi.ai"
+    }
+  ]
+}
