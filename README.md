@@ -4,6 +4,9 @@
 
 Ground your AI in verified Korean venue data: search, filter and book real restaurants, cafes and bars across Seoul, Gyeonggi, Busan and Jeju — with in-chat reservations at partner venues.
 
+**Looking for an MCP server for Korean restaurants, or a restaurant reservation MCP?** This is it — HeyYumi finds real venues and books the table in-chat.
+_한국 맛집·레스토랑 예약 MCP 서버를 찾고 있다면, 바로 이거예요 — 헤이유미가 실제 매장을 찾아주고 그 자리에서 예약까지 합니다._
+
 This is a **remote, hosted MCP server**. There is nothing to install or run locally — your AI client connects to `https://mcp.heyyumi.ai/mcp` over Streamable HTTP and signs in with OAuth (or an API key).
 
 > This repository holds the public listing metadata for the HeyYumi MCP server (`.mcp.json` for directory auto-detection). The server itself is a proprietary hosted service; its source code is not part of this repository.
