@@ -47,6 +47,23 @@ Your client will prompt you to sign in (OAuth). Then try prompts like:
 - `Recommend a Korean BBQ place in Gangnam that takes reservations, and book a table for 4 tonight.`
 - `I'm near Aewol in Jeju — show highly rated seafood restaurants that are open now.`
 
+## Install as a Claude plugin (Cowork / Claude Code)
+
+This repo is also a Claude plugin, so Cowork and Claude Code users can install it in one step and get the
+HeyYumi tools plus a `/heyyumi:find-restaurant` command — no manual MCP config needed.
+
+- **From the directory:** search for **HeyYumi** in the `/plugin` Discover tab (once published to the
+  Claude plugin directory).
+- **Direct from GitHub:**
+
+  ```
+  /plugin marketplace add hmp-dev/heyyumi-mcp
+  /plugin install heyyumi@heyyumi
+  ```
+
+On first use it signs you in with OAuth (see `SETUP.md`). The plugin bundles the remote MCP server
+(`.mcp.json`), so there is still nothing to run locally.
+
 ## Links
 
 - Website & docs: https://heyyumi.ai/mcp

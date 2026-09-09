@@ -1,0 +1,15 @@
+{
+  "name": "heyyumi",
+  "description": "HeyYumi — verified Korean restaurant, cafe, and bar data with in-chat reservations, for AI agents.",
+  "owner": {
+    "name": "HeyYumi (유미데이터)",
+    "url": "https://heyyumi.ai"
+  },
+  "plugins": [
+    {
+      "name": "heyyumi",
+      "source": "./",
+      "description": "Search verified Korean restaurants, cafes, and bars and book a table in-chat, over MCP. Seoul, Gyeonggi, Busan, Jeju, and expanding."
+    }
+  ]
+}
