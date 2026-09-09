@@ -1,0 +1,10 @@
+{
+  "name": "heyyumi",
+  "version": "1.0.3",
+  "description": "Ground your AI in verified Korean venue data: search, filter and book real restaurants, cafes and bars across Seoul, Gyeonggi, Busan and Jeju — with in-chat reservations at partner venues.",
+  "mcpServers": {
+    "heyyumi": {
+      "httpUrl": "https://mcp.heyyumi.ai/mcp"
+    }
+  }
+}

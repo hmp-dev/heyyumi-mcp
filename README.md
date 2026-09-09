@@ -64,6 +64,16 @@ HeyYumi tools plus a `/heyyumi:find-restaurant` command — no manual MCP config
 On first use it signs you in with OAuth (see `SETUP.md`). The plugin bundles the remote MCP server
 (`.mcp.json`), so there is still nothing to run locally.
 
+## Install as a Gemini CLI extension
+
+This repo is also a Gemini CLI extension (`gemini-extension.json`), so it can be installed with one command:
+
+```
+gemini extensions install https://github.com/hmp-dev/heyyumi-mcp
+```
+
+It wires up the remote HeyYumi MCP server (`httpUrl`) and signs you in with OAuth on first use — nothing to run locally.
+
 ## Links
 
 - Website & docs: https://heyyumi.ai/mcp
