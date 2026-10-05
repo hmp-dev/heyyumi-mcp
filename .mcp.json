@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "heyyumi": {
+      "type": "http",
       "url": "https://mcp.heyyumi.ai/mcp"
     }
   }
