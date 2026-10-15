@@ -4,7 +4,7 @@
 
 **Your AI finds and books real Korean restaurants — no matter what language you speak.**
 
-Ask the AI you already use for a local spot in Korea, and it searches verified restaurants, cafes and bars across Seoul, Gyeonggi, Busan and Jeju, then books the table for you — all in one chat, just by asking. No Korean needed, no separate app, no phone call. (English today, more languages rolling out.)
+Ask the AI you already use for a local spot in Korea, and it searches verified restaurants, cafes and bars across Seoul, Gyeonggi, Busan, Jeju, Incheon, Daejeon, Sejong and North/South Chungcheong, then books the table for you — all in one chat, just by asking. No Korean needed, no separate app, no phone call. (English today, more languages rolling out.)
 
 For visitors to Korea, that means the language barrier is gone: you keep your own AI, it finds the places locals actually go to, and the reservation is confirmed with the real owner right inside the conversation.
 
