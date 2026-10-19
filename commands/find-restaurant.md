@@ -1,5 +1,5 @@
 ---
-description: Find (and optionally book) a Korean restaurant, cafe, or bar with HeyYumi — real, cross-verified venues with in-chat reservations at partner venues.
+description: Find (and optionally book) a Korean restaurant, cafe, or bar with HeyYumi — real, cross-verified venues with in-chat reservation requests.
 argument-hint: [what you're looking for, e.g. "quiet date-night place near Gangnam Station that takes reservations"]
 ---
 
@@ -28,9 +28,11 @@ Follow this flow:
    and never make up a star rating.
 
 4. **Offer the reservation when it's real.** If a shortlisted venue is a Yumi Partner
-   (`yumiReservable: true`), tell the user up front they can book right here in the chat, and offer to
-   send a request with `request_reservation` (it starts as *pending* and the owner confirms — it is a
-   request, not a guaranteed-held seat). Then poll `wait_for_reservation` and report the outcome.
+   (`yumiReservable: true`) or shows `yumiBooking.canRequest: true`, tell the user they can send a
+   reservation request right here in the chat and will hear within 5 minutes whether it's accepted.
+   Use `request_reservation` (it starts as *pending* — a request, not a guaranteed-held seat), then poll
+   `wait_for_reservation` and report the outcome. If `yumiBooking.requestHours` is not `anytime`, mention
+   those hours. If neither flag is present, say the venue isn't bookable on HeyYumi yet.
 
 Present a short shortlist (2–5 places) with the one detail that answers the user's ask, and end by
 offering to pull photos (`show_place_photos`) or send a reservation.

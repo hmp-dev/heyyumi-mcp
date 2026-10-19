@@ -32,5 +32,7 @@ than a guess. If you get an authorization error, complete the OAuth sign-in abov
 
 - Coverage: Seoul, Gyeonggi, Incheon, Busan, Jeju, Daejeon, Sejong, Chungnam and Chungbuk (500,000+ venues), expanding nationwide. Strongest density in Seoul. If an area
   is out of coverage, HeyYumi says so rather than guessing.
-- In-chat reservations work only at Yumi Partner venues (`yumiReservable: true`). A reservation starts
-  as *pending* and is confirmed by the venue owner — it is a request, not a held seat.
+- In-chat reservation requests work at Yumi Partner venues (`yumiReservable: true`) and at venues that
+  show `yumiBooking.canRequest: true` (`yumiBooking.requestHours` says when they take requests). A request
+  starts as *pending* and you hear within 5 minutes whether it's accepted — it is a request, not a held
+  seat. If neither flag is present, the venue isn't bookable on HeyYumi yet.
