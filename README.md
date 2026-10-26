@@ -6,7 +6,7 @@
 
 Ask the AI you already use for a local spot in Korea, and it searches verified restaurants, cafes and bars across Seoul, Gyeonggi, Busan, Jeju, Incheon, Daejeon, Sejong and North/South Chungcheong, then books the table for you — all in one chat, just by asking. No Korean needed, no separate app, no phone call. (English today, more languages rolling out.)
 
-For visitors to Korea, that means the language barrier is gone: you keep your own AI, it finds the places locals actually go to, and you hear back within 5 minutes, right inside the conversation, whether the restaurant accepted your reservation request.
+For visitors to Korea, that means the language barrier is gone: you keep your own AI, it finds the places locals actually go to, and you hear back right inside the conversation whether the restaurant accepted your reservation request.
 
 **Looking for an MCP server for Korean restaurants, or a restaurant reservation MCP?** This is it — HeyYumi finds real local venues and books the table in-chat, in your own language.
 _한국 맛집·레스토랑 예약 MCP 서버를 찾고 있다면 바로 이거예요 — 헤이유미가 실제 로컬 매장을 찾아주고, 말 한마디로 그 자리에서 예약까지 끝냅니다._
@@ -21,8 +21,8 @@ Instead of hallucinating restaurants or handing you off to another app, your age
 
 - **Search & filter** by neighborhood/station/landmark (in Korean *or* romanized — "Gangnam", "성수동", "Hongdae"), cuisine, price, atmosphere, and 40+ attributes (wifi, parking, group-friendly, private room, vegan options, English-speaking staff, open-now, and more).
 - **Find nearby** venues by coordinates.
-- **Reserve in-chat** — send a real table reservation request without leaving the conversation: the restaurant accepts or declines within 5 minutes, and your AI reports the result back to you. Yumi Partner venues also keep their own menus, photos and hours up to date and manage bookings in the Yumi Partners app.
-- **Ask what's available right now** at Yumi Partner venues — "is it open?", "how long is the wait?", "can 10 of us come in?" — routed straight to the owner for a live answer within minutes.
+- **Reserve in-chat** — send a real table reservation request without leaving the conversation, at Yumi Partner venues and many other venues. When the venue is taking requests you know within 5 minutes whether it's accepted; requests sent late at night are held and checked the next morning, with the result sent by text or email. Yumi Partner venues also keep their own menus, photos and hours up to date and manage bookings in the Yumi Partners app.
+- **Ask what's available right now** at Yumi Partner venues — "is it open?", "how long is the wait?", "can 10 of us come in?" — sent straight to the owner, and the reply comes back in the chat as soon as they answer.
 - **Read honestly** — confidence scores, freshness, closure risk, and reputation basis so answers stay grounded, not guessed.
 
 Data is reconciled and confidence-scored across independent sources, so agents reach the right answer in fewer calls. The same data is available over MCP and REST, with OAuth sign-in for Claude and ChatGPT or an API key for other clients.

@@ -29,10 +29,12 @@ Follow this flow:
 
 4. **Offer the reservation when it's real.** If a shortlisted venue is a Yumi Partner
    (`yumiReservable: true`) or shows `yumiBooking.canRequest: true`, tell the user they can send a
-   reservation request right here in the chat and will hear within 5 minutes whether it's accepted.
-   Use `request_reservation` (it starts as *pending* — a request, not a guaranteed-held seat), then poll
-   `wait_for_reservation` and report the outcome. If `yumiBooking.requestHours` is not `anytime`, mention
-   those hours. If neither flag is present, say the venue isn't bookable on HeyYumi yet.
+   reservation request right here in the chat. Use `request_reservation` (it starts as *pending* — a
+   request, not a guaranteed-held seat). If the result has `reviewStartsAt`, the request was sent outside
+   the venue's request hours and is held until then: relay its `yumiNextStep` and don't poll. Otherwise
+   tell the user they'll know within 5 minutes, then poll `wait_for_reservation` and report the outcome.
+   If neither flag is present and the user asks to book that venue, say it isn't bookable on HeyYumi yet
+   and offer requestable venues nearby.
 
 Present a short shortlist (2–5 places) with the one detail that answers the user's ask, and end by
 offering to pull photos (`show_place_photos`) or send a reservation.
