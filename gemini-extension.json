@@ -1,6 +1,6 @@
 {
   "name": "heyyumi",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Ground your AI in verified Korean venue data: search, filter and book real restaurants, cafes and bars across Seoul, Gyeonggi, Incheon, Busan, Jeju, Daejeon, Sejong, Chungnam and Chungbuk — with in-chat reservation requests.",
   "mcpServers": {
     "heyyumi": {
