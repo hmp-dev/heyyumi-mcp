@@ -80,6 +80,17 @@ gemini extensions install https://github.com/hmp-dev/heyyumi-mcp
 
 It wires up the remote HeyYumi MCP server (`httpUrl`) and signs you in with OAuth on first use — nothing to run locally.
 
+## Install as a Perplexity plugin
+
+This repo is also a Perplexity plugin (`plugin.json` + `mcp.json` at the root). In Perplexity, open
+**Plugins** (`perplexity.ai/computer/plugins`) → **Add custom** → **Import plugin from GitHub** and paste:
+
+```
+https://github.com/hmp-dev/heyyumi-mcp
+```
+
+It adds the remote HeyYumi MCP server as a connector and signs you in with OAuth on first use.
+
 ## Links
 
 - Website & docs: https://heyyumi.ai/mcp

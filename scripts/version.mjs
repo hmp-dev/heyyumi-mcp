@@ -10,6 +10,7 @@ const MANIFESTS = [
   '.claude-plugin/plugin.json',
   '.cursor-plugin/plugin.json',
   'gemini-extension.json',
+  'plugin.json',
 ];
 
 // A directory review can restart when the version changes, so these stay put until the listing is live.
