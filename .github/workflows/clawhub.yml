@@ -1,0 +1,27 @@
+name: clawhub
+
+# Publishes openclaw/heyyumi to ClawHub (clawhub.ai).
+# Until the repo variable CLAWHUB_PUBLISH is 'true' and the secret CLAWHUB_TOKEN is set,
+# every run is a dry run that only validates the skill folder.
+
+on:
+  push:
+    branches: [main]
+    paths: ['openclaw/**', '.github/workflows/clawhub.yml']
+  pull_request:
+    paths: ['openclaw/**', '.github/workflows/clawhub.yml']
+  workflow_dispatch:
+
+jobs:
+  skill:
+    permissions:
+      contents: read
+      id-token: write
+    uses: openclaw/clawhub/.github/workflows/skill-publish.yml@c9a9fe2ed4c43990df52ea7bf8becbcf2c5890c8
+    with:
+      skill_path: openclaw/heyyumi
+      dry_run: ${{ !(vars.CLAWHUB_PUBLISH == 'true' && github.event_name != 'pull_request' && github.ref == 'refs/heads/main') }}
+      categories: lifestyle,integrations
+      topics: korea,restaurant,reservation,travel,mcp
+    secrets:
+      clawhub_token: ${{ secrets.CLAWHUB_TOKEN }}

@@ -91,6 +91,19 @@ https://github.com/hmp-dev/heyyumi-mcp
 
 It adds the remote HeyYumi MCP server as a connector and signs you in with OAuth on first use.
 
+## Install as an OpenClaw skill
+
+The `openclaw/heyyumi/` folder is an OpenClaw skill (`SKILL.md` + an `mcporter` config for the remote
+server). Copy it into your skills directory:
+
+```
+git clone https://github.com/hmp-dev/heyyumi-mcp
+cp -r heyyumi-mcp/openclaw/heyyumi ~/.openclaw/skills/
+```
+
+It calls `https://mcp.heyyumi.ai/mcp` through `mcporter` and signs you in with OAuth on first use, or uses
+an API key if you set `HEYYUMI_API_KEY`. Nothing runs locally besides the `mcporter` CLI.
+
 ## Links
 
 - Website & docs: https://heyyumi.ai/mcp
