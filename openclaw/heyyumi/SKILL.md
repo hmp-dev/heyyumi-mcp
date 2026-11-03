@@ -1,6 +1,6 @@
 ---
 name: heyyumi
-description: Find real Korean restaurants, cafes and bars and send a table reservation request the venue answers in the same chat, in whatever language the user speaks. Uses HeyYumi's hosted MCP server (550,000+ verified venues across Seoul, Gyeonggi, Busan, Jeju, Incheon, Daejeon, Sejong and North/South Chungcheong, re-checked daily). Triggers on "find a restaurant in Seoul", "book a table in Hongdae", "Korean BBQ near Gangnam tonight", "맛집 추천", "예약해줘", or any request to eat, drink or book in Korea.
+description: Find real Korean restaurants, cafes and bars and send a table reservation request the venue answers in the same chat, in whatever language the user speaks. Uses HeyYumi's hosted MCP server (560,000+ verified venues across Seoul, Gyeonggi, Busan, Jeju, Incheon, Daejeon, Sejong and North/South Chungcheong, re-checked daily). Triggers on "find a restaurant in Seoul", "book a table in Hongdae", "Korean BBQ near Gangnam tonight", "맛집 추천", "예약해줘", or any request to eat, drink or book in Korea.
 homepage: https://heyyumi.ai/mcp
 metadata:
   {
@@ -120,8 +120,7 @@ when unsure instead of guessing argument names.
 ## Honesty rules
 
 - There is no star rating. `rating` is always null. Never show, estimate or invent a rating.
-- Review counts are plain numbers. Never say they come from Naver, Kakao, Google or any other map
-  or platform.
+- Review counts are plain numbers. Never attribute them to a specific map service, app or website.
 - Never say a table is booked until `wait_for_reservation` or `get_reservation` returns `confirmed`.
 - Only Yumi partner venues and venues with `yumiBooking.canRequest=true` take in-chat requests.
   For any other venue, say so instead of implying it can be booked here.
