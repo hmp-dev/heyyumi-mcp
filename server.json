@@ -3,8 +3,15 @@
   "name": "ai.heyyumi/heyyumi",
   "title": "HeyYumi",
   "description": "Find & book real Korean restaurants, hair & nail salons in any language, in-chat, across Korea.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "websiteUrl": "https://heyyumi.ai/mcp",
+  "icons": [
+    {
+      "src": "https://heyyumi.ai/icon.png",
+      "mimeType": "image/png",
+      "sizes": ["256x256"]
+    }
+  ],
   "repository": {
     "url": "https://github.com/hmp-dev/heyyumi-mcp",
     "source": "github"
