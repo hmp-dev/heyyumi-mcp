@@ -4,7 +4,7 @@
 
 **Your AI finds and books real Korean restaurants — no matter what language you speak.**
 
-Ask the AI you already use for a local spot in Korea, and it searches verified restaurants, cafes and bars across Seoul, Gyeonggi, Busan, Jeju, Incheon, Daejeon, Sejong and North/South Chungcheong, then sends your reservation request — all in one chat, just by asking. No Korean needed, no separate app, no phone call. (English today, more languages rolling out.)
+Ask the AI you already use for a local spot in Korea, and it searches verified restaurants, cafes and bars, and hair salons, nail, lash and waxing shops and skin care, across Seoul, Gyeonggi, Busan, Jeju, Incheon, Daejeon, Sejong and North/South Chungcheong, then sends your reservation request — all in one chat, just by asking. No Korean needed, no separate app, no phone call. (English today, more languages rolling out.)
 
 For visitors to Korea, that means the language barrier is gone: you keep your own AI, it finds the places locals actually go to, and you hear back right inside the conversation whether the restaurant accepted your reservation request.
 
@@ -20,8 +20,9 @@ This is a **remote, hosted MCP server**. There is nothing to install or run loca
 Instead of hallucinating restaurants or handing you off to another app, your agent calls tools to work with real, cross-verified venues — and finishes the booking in the same chat:
 
 - **Search & filter** by neighborhood/station/landmark (in Korean *or* romanized — "Gangnam", "성수동", "Hongdae"), cuisine, price, atmosphere, and 40+ attributes (wifi, parking, group-friendly, private room, vegan options, English-speaking staff, open-now, and more).
+- **Beauty too** — "my hair's gotten long, should I get a cut today?" works the same way: hair salons, nail, lash and waxing shops and skin care, searched on their own so food and beauty results never mix. Pilates, yoga and gym studios that are Yumi Partners show up as well.
 - **Find nearby** venues by coordinates.
-- **Reserve in-chat** — send a real table reservation request without leaving the conversation, at Yumi Partner venues and many other venues. When the venue is taking requests you know within 5 minutes whether it's accepted; requests sent late at night are held and checked the next morning, with the result sent by text or email. Yumi Partner venues also keep their own menus, photos and hours up to date and manage bookings in the Yumi Partners app.
+- **Reserve in-chat** — send a real reservation request (a table, or a beauty appointment) without leaving the conversation, at Yumi Partner venues and many other venues. When the venue is taking requests you know within 5 minutes whether it's accepted; requests sent late at night are held and checked the next morning, with the result sent by text or email. Yumi Partner venues also keep their own menus, photos and hours up to date and manage bookings in the Yumi Partners app.
 - **Ask what's available right now** at Yumi Partner venues — "is it open?", "how long is the wait?", "can 10 of us come in?" — sent straight to the owner, and the reply comes back in the chat as soon as they answer.
 - **Read honestly** — confidence scores, freshness, closure risk, and reputation basis so answers stay grounded, not guessed.
 
@@ -52,6 +53,7 @@ Your client will prompt you to sign in (OAuth). Then try prompts like:
 - `I don't speak Korean — find a seafood place near Jeju Airport and book a table for 2 tonight.`
 - `Find a quiet cafe near Hongdae with wifi and power outlets for working.`
 - `Recommend a Korean BBQ place in Gangnam that takes reservations, and book a table for 4 tonight.`
+- `My hair has gotten too long — find a hair salon in Seongsu I can book this afternoon.`
 
 ## Install as a Claude plugin (Cowork / Claude Code)
 

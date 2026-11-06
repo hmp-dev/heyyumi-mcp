@@ -1,6 +1,6 @@
 ---
 name: heyyumi
-description: Find real Korean restaurants, cafes and bars and send a table reservation request the venue answers in the same chat, in whatever language the user speaks. Uses HeyYumi's hosted MCP server (560,000+ verified venues across Seoul, Gyeonggi, Busan, Jeju, Incheon, Daejeon, Sejong and North/South Chungcheong, re-checked daily). Triggers on "find a restaurant in Seoul", "book a table in Hongdae", "Korean BBQ near Gangnam tonight", "맛집 추천", "예약해줘", or any request to eat, drink or book in Korea.
+description: Find real Korean restaurants, cafes and bars, and hair salons, nail, lash and waxing shops and skin care, and send a reservation request the venue answers in the same chat, in whatever language the user speaks. Uses HeyYumi's hosted MCP server (560,000+ verified venues across Seoul, Gyeonggi, Busan, Jeju, Incheon, Daejeon, Sejong and North/South Chungcheong, re-checked daily). Triggers on "find a restaurant in Seoul", "book a table in Hongdae", "Korean BBQ near Gangnam tonight", "맛집 추천", "오늘 뭐 먹지", "머리 자르러 갈까", "네일 예약", "예약해줘", or any request to eat, drink, get a haircut, nails, lashes or waxing, or book in Korea.
 homepage: https://heyyumi.ai/mcp
 metadata:
   {
@@ -31,10 +31,11 @@ metadata:
   }
 ---
 
-# HeyYumi: Korean restaurant search and reservation requests
+# HeyYumi: Korean restaurant and beauty search and reservation requests
 
 HeyYumi is a hosted MCP server at `https://mcp.heyyumi.ai/mcp`. It searches verified Korean
-restaurants, cafes and bars and sends table reservation requests that the venue accepts or declines,
+restaurants, cafes and bars, and beauty venues (hair salons, nail, lash and waxing shops, skin care),
+and sends reservation requests that the venue accepts or declines,
 with the answer coming back into this chat. The user never needs to speak Korean, install a Korean
 app or make a phone call. Talk to the user in the language they write in.
 
@@ -87,6 +88,9 @@ when unsure instead of guessing argument names.
 2. Call `search_places` once with `page_size` 5 to 10. For booking intent add
    `reservation_channel=yumi`. Put any time or meal ("tonight 7pm", "lunch", "now") in `open_at`.
    For a meal with no drinking mentioned, add `business_category=restaurant`.
+   For a haircut, nails, lashes, waxing or skin care, set `business_category` (`salon`, `nail`,
+   `lash`, `waxing`, `esthetic`, or `beauty` for all of them). One kind per search: without it you
+   only get restaurants, cafes and bars, and food and beauty results never mix.
 3. Present the top results as picks (they are ranked by quality, not distance). Keep Korean venue
    names and addresses as they are and add a romanization when it helps.
 4. Relay `meta` notes honestly: relaxed or softened filters, a widened area (then the results are
@@ -99,7 +103,7 @@ when unsure instead of guessing argument names.
    is true. If neither is true, say plainly that this venue can't be booked through HeyYumi yet,
    share its `placeUrl` if present, and offer nearby venues that can take a request.
 2. Settle the venue, a concrete future date and time (Korea time), and party size before asking
-   for any personal details.
+   for any personal details. At a beauty venue put the treatment (cut, perm, gel nails) in `note`.
 3. Collect the guest's name and mobile phone (always required; foreign guests give their own
    international number). Ask for an email only when the phone number is not Korean, in the same
    message. Never ask a Korean-number guest for an email.

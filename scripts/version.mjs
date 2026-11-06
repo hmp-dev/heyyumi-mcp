@@ -16,6 +16,7 @@ const MANIFESTS = [
 // A directory review can restart when the version changes, so these stay put until the listing is live.
 const HELD = {
   '.claude-plugin/plugin.json': 'Claude plugin directory review in progress (since 2026-10-06). Remove this line and run the setter once it is live.',
+  'plugin.json': 'Perplexity connector request in progress (since 2026-10-27). Remove this line and run the setter once it is live.',
 };
 
 const read = (f) => JSON.parse(readFileSync(f, 'utf8'));
